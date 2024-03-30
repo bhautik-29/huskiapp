@@ -1,0 +1,109 @@
+@media (min-width:1400px) {
+  .mrl-7{
+   margin-left: 7rem !important;
+   margin-right: 7rem !important;
+  }
+ }
+
+@media (max-width:1180px) {
+
+  header .nav-items .main-menu .nav-list .sub-menu{
+    box-shadow: none;
+  }
+  header .nav-logo img{
+    object-fit: cover;
+    height: auto;
+    width: 130px ;
+    object-fit: cover;
+  }
+  header .main-menu {
+    flex-direction: column;
+  }
+  header{
+      padding: 20px;
+      width: auto;
+  }
+  header .nav-logo a,.nav-logo{
+      width: 90%;
+      display:flex ;
+      justify-content: center;
+      align-items: center;
+  }
+  header .nav-container{
+      width: 10%;
+  }
+  header .menu-bar{
+      display: initial;
+      order: 2;
+  }
+  header .nav-logo{
+      order: 1 ;
+  }
+  header .inner-nav{
+      display: initial;
+     
+  }
+  header .nav-items{ 
+      position: absolute;
+      top:100%; left: 0; right: 0;
+      background-color: #ffffff;
+      border-top: 1px solid rgba(0, 0, 0, 0.178);
+      display: none;
+  }
+  header .login-btn{
+      position: relative;
+      width: 50px;
+      left:0;
+  }
+  header  .nav-items .main-menu .nav-list {
+      width: 100%;
+  }
+  header .nav-items .main-menu .nav-list .sub-menu {
+      position: relative;
+      width: 100%;
+  }
+  header .outer-nav{
+      display: none;
+  }
+
+}
+@media (max-width:767px) {
+    .brand-container{
+      flex-wrap: wrap;
+      flex-flow: column;
+    }
+
+  }
+
+@media (max-width:576px) {
+  .transperent-link-btn a,.link-btn a{
+    font-size: 13.34px;
+  }
+  .transperent-link-btn{
+    height: 35px;
+    width: 150px;
+  }
+  .link-btn{
+    height: 35px;
+    width: 150px;
+  }
+  .link-btn img{
+    height: auto;
+    width: 18px;
+  }
+
+  .osr-container,.osr-container-fluid{
+    max-width: 90%;
+  }
+  .app-card{
+    height: auto;
+    width: 400px;
+    padding-bottom: 30px;
+  }
+  .text-xsm-center{
+    text-align: center;
+  }
+  .w-xsm-50{
+    width: 50%;
+  }
+}

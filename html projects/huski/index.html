@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- page title -->
+  <title>huski app</title>
+  <!-- favicon incon -->
+  <link rel="shortcut icon" href="assests/image/favicon/favicon-icon.png" type="image/png">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oooh+Baby&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Square+Peg&display=swap" rel="stylesheet">
+  <!-- font awosame file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <!-- oneonic-grid -->
+  <link rel="stylesheet" href="assests/css/oneonic-grid.min.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="assests/css/style.css">
+    <!-- responsive css -->
+  <link rel="stylesheet" href="assests/css/responsive.css">
+</head>
+<body>
+
+  <!---------- Header Section Start ------------>
+
+<header>
+  <div class="navigation-wrapper">
+    <div class="nav-logo">
+      <a href="#"><img src="assests/image/navigation-logo/nav-logo.png" alt="navlogo"></a>
+    </div>
+    <div class="nav-container ">
+      <div class="menu-logo">
+        <i class="fa-solid fa-bars menu-bar " id="manubar" onclick="clickmenu()"></i>
+      </div>
+      <nav class="nav-items">
+        <ul class="main-menu">
+          <li class="nav-list"><a href="#" class="nav-links active">Home</a></li>
+          <li class="nav-list"><a href="#" class="nav-links" onclick="clicksubmenu()">Our Shopify App</a>
+            <ul class="sub-menu" id="sub-menu-1">        
+              <li class="nav-list"><a href="#" class="nav-links">Terms bee</a></li>
+              <li class="nav-list"><a href="#" class="nav-links">Aio Section</a></li>
+              <li class="nav-list"><a href="#" class="nav-links">Gift Huski</a></li>
+              <li class="nav-list"><a href="#" class="nav-links">Product sample</a></li>
+            </ul>
+          </li>
+          <li class="nav-list"><a href="#" class="nav-links">Helpdesk</a></li>
+          <li class="nav-list"><a href="#" class="nav-links">Blogs</a></li>
+          <li class="nav-list"><a href="#" class="nav-links" onclick="clicksubmenu2()">Contact us</a>
+            <ul class="sub-menu" id="sub-menu-2">
+              <li class="nav-list"><a href="#" class="nav-links">about us action</a></li>
+              <li class="nav-list"><a href="#" class="nav-links">Privacy & Policy</a></li>
+              <li class="nav-list"><a href="#" class="nav-links">Terms & Conditions</a></li>
+              <li class="nav-list"><a href="#" class="nav-links">Affiliate</a></li>
+            </ul>
+          </li>
+          <li class=" inner-nav  nav-list"> 
+            <a href="" class="nav-links">log in</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="login-btn outer-nav"> 
+      <a href="" >Log in</a>
+    </div>
+  </div>
+</header>
+  <!---------- Header Section End ------------>
+
+<!---------- Main Section Start ------------>
+<main>
+<!---------- Home-Page Banner Section Start ------------>
+<section id="home-page-banner">
+  <div class="osr-container-fluid">
+    <div class="homepage-banner-container">
+      <div class="osr-row">
+        <div class="osr-col-sm-12 osr-col-lg-6 osr-col-xxl-6">
+          <div class="homepage-banner-content-wrepper">
+            <div class="homepage-banner-content "><!--Home-Page-Content Start-->
+              <div class="homepage-banner-heading">
+                <p class="heading ">
+                  Shopify Apps From <span class="superior">Superior</span> 
+                  <br> Shopify Experts
+                </p>
+                <p class="sub-heading osr-pt-3 osr-pb-4">
+                  With <span class="huski-img"><img src="assests/image/huski-small/huski-small.png" alt="huskiapp-img"></span>
+                </p>
+              </div>
+              <div class="homepage-banner-description ">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br>
+                  elit, sed do eiusmod tempor incididunt ut labore et </p>
+              </div>
+              <div class="homepage-banner-links pt-2">
+                <div class="link-btn">
+                  <a href="#">BROWSE APPS</a>
+                  <img src="assests/image/small-icon/arrow-right.png" alt="arrow">
+                </div>
+                <div class="video-link-btn">
+                    <button class="video-btn"><span><img src="assests/image/small-icon/play-btn-green.png" alt="play-btn-green"><P>WATCH VIDEO</P></span>
+                    </button>
+                </div>
+              </div>
+            </div><!--Home-Page-Content End-->
+          </div>
+        </div>
+        <div class="osr-col-sm-12 osr-col-lg-6 osr-col-xxl-6">
+          <div class="homepage-banner-image"><!--Banner-Img-2 Start-->
+            <img src="assests/image/banner-image/homepage-banner-img.png" alt="homepage-sectionimg-2">
+          </div><!--Banner-Img-2 End-->
+        </div>
+      </div>
+    </div>  
+  </div>
+</section>
+<!---------- Home-Page-Banner Section End ------------>
+
+<!---------- Home-Page-Brand Section Start ------------>
+<section id="homePage-brand-section">
+  <div class="osr-container mtb-5">
+    <div class="osr-row osr-justify-content-center" >
+      <div class=" osr-col-sm-12 osr-col-md-12 osr-col-lg-12 osr-col-xxl-12" >
+        <div class="brand-heading osr-mb-5 osr-me-3">
+          <p class="heading"><span class="blue-text fw-600">HUSKIAPP</span> POWERS THE WORLD’S MOST INNOVATIVE BRANDS</p>
+        </div>
+      </div>
+      <div class="w-50 osr-col-sm-6 osr-col-md-12 osr-col-lg-12 osr-col-xxl-12" >
+        <div class="brand-container">
+          <span class="brand-img"><img src="assests/image/brands-image/image-6.png" alt="brand-img"></span>
+          <span class="brand-img"><img src="assests/image/brands-image/image-7.png" alt="brand-img"></span>
+          <span class="brand-img brand-3"><img src="assests/image/brands-image/image-8.png" alt="brand-img"></span>
+          <span class="brand-img"><img src="assests/image/brands-image/image-9.png" alt="brand-img"></span>
+          <span class="brand-img"><img src="assests/image/brands-image/image-10.png" alt="brand-img"></span>
+        </div>
+      </div>
+      <div class="w-50 osr-col-sm-6 osr-col-md-12  osr-col-lg-12 osr-col-xxl-12">
+        <div class="brand-container">
+          <span class="brand-img"><img src="assests/image/brands-image/image-11.png" alt="brand-img"></span>
+          <span class="brand-img"><img src="assests/image/brands-image/image-12.png" alt="brand-img"></span>
+          <span class="brand-img"><img src="assests/image/brands-image/image-13.png" alt="brand-img"></span>
+          <span class="brand-img"><img src="assests/image/brands-image/image-14.png" alt="brand-img"></span>
+          <span class="brand-img"><img src="assests/image/brands-image/image-15.png" alt="brand-img"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!---------- Home-Page-Brand Section End ------------>
+
+<section id="app-card-section">
+  <div class="osr-container osr-mt-3"> 
+    <div class="osr-row app-card-container osr-justify-content-lg-center osr-mx-4 mrl-7">
+        <div class="osr-col-sm-12 osr-col-md-12
+        osr-col-lg-9 osr-col-xl-8 osr-col-xxl-8 osr-my-5">
+        <div class="app-card-header-content">
+          <div class="app-card-heading osr-pb-1">
+            <h3 class="heading text-center">
+              Our <span class="blue-text">Shopify</span>Apps
+            </h3>
+          </div>
+          <div class="app-card-sub-heading">
+            <p class="subheading text-center">
+              We develop apps in the hope of your business development. Help you increase sales and easily administrate your stores. Your success is our pride.
+            </p>
+          </div>
+        </div>
+        </div>
+        <div class="osr-col-sm-12 osr-col-md-6
+        osr-col-lg-6 osr-col-xl-5 osr-col-xxl-5 osr-py-4">
+          <div class="app-card-wrepper">
+            <div class="app-card">
+              <div class="app-img ">
+                <img src="assests/image/small-icon/termsbee-img.png" alt="huski-img">
+              </div>
+              <div class="app-heading">
+                <p class="heading text-xsm-center">
+                  TermsBee - I Agree To Terms
+                </p>
+              </div>
+              <div class="app-description">
+                <p class="detail">
+                  TermsBee allows you to add a Terms and Conditions Checkbox to your store easily. After enabling the app a checkbox will  immediately
+                </p>
+              </div>
+              <div class="link-btn">
+                <a href="">EXPLORE NOW </a>
+                  <img src="assests/image/small-icon/arrow-right.png" alt="arrow-right">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="osr-col-sm-12 osr-col-md-6
+        osr-col-lg-6 osr-col-xl-5 osr-col-xxl-5 osr-py-4">
+          <div class="app-card-wrepper">
+            <div class="app-card">
+              <div class="app-img">
+                <img src="assests/image/small-icon/aio-section.png" alt="huski-img">
+              </div>
+              <div class="app-heading text-xsm-center">
+                <p class="heading">
+                  Aiosections - Theme Sections
+                </p>
+              </div>
+              <div class="app-description">
+                <p class="detail">
+                  Aiosections is a library of hand-crafted, professionally designed sections and landing page editor you can use on any  theme page.
+                </p>
+              </div>
+              <div class="link-btn">
+                <a href="">EXPLORE NOW </a>
+                  <img src="assests/image/small-icon/arrow-right.png" alt="arrow-right">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="osr-col-sm-12 osr-col-md-6
+        osr-col-lg-6 osr-col-xl-5 osr-col-xxl-5 osr-py-4">
+          <div class="app-card-wrepper">
+            <div class="app-card">
+              <div class="app-img">
+                <img src="assests/image/small-icon/huskiproduct-img.png" alt="huski-img">
+              </div>
+              <div class="app-heading text-xsm-center">
+                <p class="heading">
+                  Huski Product Sample & memo
+                </p>
+              </div>
+              <div class="app-description">
+                <p class="detail">
+                  Product sample & order memo a simple 
+                   and effective solution to enhance your customers' shopping experience while  boosting your sales and returns.
+                </p>
+              </div>
+              <div class="link-btn">
+                <a href="">EXPLORE NOW </a>
+                  <img src="assests/image/small-icon/arrow-right.png" alt="arrow-right">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="osr-col-sm-12 osr-col-md-6
+        osr-col-lg-6 osr-col-xl-5 osr-col-xxl-5 osr-py-4">
+          <div class="app-card-wrepper">
+            <div class="app-card">
+              <div class="app-img">
+                <img src="assests/image/small-icon/gift-img.png" alt="huski-img">
+              </div>
+              <div class="app-heading text-xsm-center">
+                <p class="heading">
+                  Giftman ‑ Gift Wrap & Message
+                </p>
+              </div>
+              <div class="app-description">
+                <p class="detail">
+                  Elevate your Shopify store's gifting experience with giftman! Our powerful integration adds a wide range of enhanced gifting features
+                </p>
+              </div>
+              <div class="link-btn">
+                <a href="">EXPLORE NOW </a>
+                  <img src="assests/image/small-icon/arrow-right.png" alt="arrow-right">
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      
+    </div>
+  </div>
+</section>
+
+<section id="huski-plateform-section">
+  <div class="osr-container-fluid">
+    <div class="huskiapp-plateform-container">
+      <div class="osr-row">
+        <div class="osr-col-sm-12 osr-col-lg-6 osr-col-xxl-6">
+          <div class="plateform-image">
+            <img src="assests/image/huskiapp-platform-img.png" alt="plateform-img">
+          </div>
+        </div>
+        <div class="osr-col-sm-12 osr-col-lg-6 osr-col-xxl-6">
+          <div class="plateform-content-wrepper">
+            <div class="plateform-content osr-mb-5">
+              <div class="plateform-heading">
+                <P class="heading fw-600 ">
+                  Supercharge Your <br> Shopify Store with <br>
+                  <span class="blue-text">Huski apps</span> 
+                </P>
+              </div>
+              <div class="plateform-description osr-py-4">
+                <p class="description letter-space">
+                  We put all your retention solutions on one platform, so you can create seamless post-purchase journeys tailored to each customer and track performance — allowing you to see what drives your retention forward, and take action to optimize.
+                </p>
+              </div>
+              <div class="palteform-link">
+                <div class="link-btn">
+                  <a href="#">HOW TO USE?</a>
+                  <img src="assests/image/small-icon/arrow-right.png" alt="arrow">
+                </div>
+                <div class="transperent-link-btn osr-ms-sm-4">
+                  <a href="#">GET A DEMO</a>
+                  <img src="assests/image/small-icon/arrow-right-blue.png" alt="arrow">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<!---------- Main Section End ------------>
+
+<!---------- Footer Section Start ------------>
+<footer>
+
+</footer>
+<!---------- Footer Section End ------------>
+
+
+</body>
+<!-- font-awesome-js -->
+<script src="https://kit.fontawesome.com/a2f3cdbc85.js" crossorigin="anonymous"></script>
+<!-- main js -->
+<script src="assests/js/main.js"></script>
+
+
+</html>

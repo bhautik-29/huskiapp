@@ -1,0 +1,484 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project Name: huski app
+Developed by: Oneonic
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+[ALL PAGE]
+    1. Body
+    2. Header / #header
+        1.[#HOME PAGE]
+            1. Banner Section / #banner
+            2. brand section 
+            3. app section
+            4. advertisement section
+            5. shopping section
+            6. blog section
+        2. [#Our shopify app]
+            1.[#TERMS-BEE PAGE]
+                1. Banner Section
+                2. features section
+                3. purchase section
+                4. knowldge base section
+            2.[#aio page] 
+                1. Banner Section
+                2. features section
+                3. purchase section
+                4. knowldge base section  
+    3. inquery sections
+    4. Footer Section
+*/
+/* Globel variable start */
+:root{
+  --font-family-card--: "Libre Caslon Text", serif;
+  --font-family-affiliate-page--: "Square Peg", cursive;
+  --font-family-: "Poppins", sans-serif;
+  --font-family-heading: "Montserrat", sans-serif;
+  --Oooh-Baby-fontfamily-: "Oooh Baby", cursive;
+  --light-blue:#d8eeff;
+  --blog-wrepper--:#ededed;
+  --advertise-bgc--:#f4f7ff;
+  --link-btn-2:#318462;
+  --purchase-card-bgc-:#34A853;
+  --light-green:#34A853;
+  --body-backgroundColor--:#ffffff;
+  --black--:black;
+  --white--:#ffffff;
+  --light-purple--:#F4F7FF;
+  --blue-1--:#1a40e7;
+  --link-btn--:#0042E4;
+  --blue-2--:#1750DA;
+  --banner-background--:#fdfdfd;
+}
+/* Globel variable end */
+
+/* General CSS start */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  font-family: var(--font-family-);
+  background-color: var(--body-backgroundColor--);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a
+{
+font-family: var(--font-family-heading);
+font-weight: 700;
+}
+h1{
+  font-size: 66px;
+}
+h2{
+  font-size: 48px;
+}
+h3{
+  font-size: 36px;
+}
+h4{
+  font-size: 28px;
+}
+h5{
+  font-size: 26px;
+}
+h6{
+  font-size: 20px;
+}
+a{
+  font-size: 18px;
+}
+p{
+  font-size: 18px;
+  line-height: 29px;
+}
+.fw-600{
+  font-weight: 600;
+}
+.fw-500{
+  font-weight: 500;
+}
+.fw-700{
+  font-weight: 700;
+}
+.mt-2{
+  margin-top: 2rem;
+}
+.pt-2{
+  padding-top: 2rem;
+}
+.mtb-5{
+  margin-top: 5rem ;
+  margin-bottom: 5rem ;
+}
+.text-center{
+text-align: center;
+}
+.letter-space{
+  letter-spacing: .2px !important;
+}
+.link-btn{
+  height: 55px;
+  width: 196px;
+  background-color:var(--blue-2--);
+  color: var(--white--);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.transperent-link-btn{
+  height: 53px;
+  width: 194px;
+  background-color:transparent;
+  border: 1.5px solid var(--blue-2--);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.transperent-link-btn a{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16.34;
+  font-family: var(--font-family-);
+  color: var(--blue-2--);
+}
+
+.link-btn a{
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16.34px;
+  font-family: var(--font-family-);
+  color: var(--white--);
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.blue-text{
+  color: var(--blue-2--);
+}
+
+/* General CSS End */
+
+/* Header-Section Start */
+.navigation-wrapper{
+  display: flex;
+  width: 100vw;
+  height: 44px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header{
+  background-color:#ffffff;
+  position: sticky;
+  top: 0; left: 0; right: 0;
+  padding: 35px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  z-index: 1000;
+}
+
+.nav-items .main-menu .nav-list{
+  position: relative;
+  list-style: none;
+  float: left;
+}
+
+.nav-list .nav-links {
+  font-size: 16px;
+  text-decoration: none;
+  font-family: var(--font-family-heading);
+  color: black;
+  font-weight: 500;
+  opacity: 70%;
+  display: block;
+  padding: 8px 20px;
+}
+
+.nav-links:hover{
+  transition: .3s ease-in-out;
+  color: var(--link-btn--);
+  opacity: 100% ;
+}
+
+.active{
+  color: var(--link-btn--) !important;
+  font-weight: 700 !important;
+  opacity: 100% !important;
+}
+
+.login-btn a{
+  text-decoration: none;
+  color: var(--link-btn--);
+  font-size: 16px;
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+}
+
+.login-btn{
+  height: 40px;
+  width: 152px;
+  border: 2px solid var(--blue-2--) ; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-nav{
+  display: none;
+}
+
+.nav-items .main-menu .nav-list .sub-menu{
+  position: absolute; 
+  left: 0;
+  width: 200px;
+  background-color: var(--white--);
+  box-shadow: 0 0px 10px 2px rgba(26, 64, 231, 0.35);
+  border-radius: 20px;
+  display: none;
+}
+.nav-items .main-menu .nav-list .sub-menu .nav-list{
+  width: 100%;
+}
+
+header .nav-items .main-menu .nav-list .sub-menu .nav-list .nav-links:hover{
+  transform: translateX(10px);
+  transition: .8s ease;
+}
+
+.nav-items .main-menu .nav-list:hover > .sub-menu{
+  display: initial;
+}
+
+header .menu-bar{
+  display: none;
+  font-size: 25px;
+}
+
+header .main-menu{
+  display: flex;
+  justify-content: center;
+}
+/* Header-Section End */
+
+/*------------- HomePage Start---------- */
+
+/* Home-Page-Banner Section Start*/
+#home-page-banner{
+  overflow: hidden;
+}
+.homepage-banner-container{
+  background-color: var(--banner-background--);
+}
+.homepage-banner-content-wrepper{
+  background-image: url(../image/banner-image/huski-big-logo.png);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  height: 555px;
+  display: flex;
+  align-items: center;
+}
+
+.homepage-banner-content{
+  width:600px;
+  margin-left: 6.50rem;
+  margin-bottom: 5rem;
+}
+
+.homepage-banner-heading .heading{
+  font-size: 36px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.homepage-banner-heading .heading .superior{
+  font-family: var(--Oooh-Baby-fontfamily-);
+  font-size: 56px;
+  color: var(--blue-2--);
+  font-weight: 400;
+}
+
+.homepage-banner-heading .sub-heading{
+  font-size: 24px;
+}
+
+.huski-img img{
+  position: relative;
+  top: 7px;
+}
+
+.homepage-banner-links,.video-link-btn .video-btn span{
+  display: flex;
+  align-items: center;
+}
+
+.video-link-btn .video-btn span p{
+  padding-left: 10px;
+  font-weight: 700;
+  font-size: 16.34px;
+  color: var(--link-btn-2);
+  font-family: var(--font-family-);
+}
+
+.homepage-banner-image{
+  height: 555px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-link-btn{
+  margin-left: 4%;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}
+/* Home-Page-Banner Section End*/
+
+/* Home-Page-Brand Section Start */
+#homePage-brand-section{
+  overflow: hidden;
+}
+.brand-img{
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.brand-container{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.brand-3 img{
+  position: relative;
+  top: 10px;
+}
+.brand-heading .heading{
+  font-weight: 500;
+  font-family: var(--font-family-heading);
+  text-align: center;
+}
+
+/* Home-Page-Brand Section End */
+/* App-Card Section Start */
+#app-card-section{
+  overflow: hidden;
+  background-color: #fff;
+}
+.app-card{
+  border: 2px solid var(--blue-2--);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  height: 470px;
+  width: 400px;
+  background-image: url(../image/huski-small/huski-transperent-small.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+.app-card-wrepper{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.app-description > .detail{
+  text-align: center;
+  font-size: 16px;
+  font-family: var(--font-family-heading);
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.app-img{
+  margin: 3rem 0 1.5rem 0;
+}
+
+.app-description{
+
+  margin: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.app-heading .heading{
+  font-weight: 600;
+  color: #1750DA;
+}
+
+.app-card-sub-heading .subheading{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.app-card-header-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 20px;
+}
+
+.app-card-sub-heading{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: center;
+  opacity: 85%;
+}
+
+/* App-Card Section End */
+
+/* Huskiapp-Plateform Section Start */
+#huski-plateform-section{
+  overflow: hidden;
+}
+.huskiapp-plateform-container{
+  background-color: var(--light-purple--);
+}
+.plateform-content{
+  width: 550px;
+  padding: 20px 0;
+
+}
+.plateform-image,.plateform-content-wrepper{
+  height: 660px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plateform-heading .heading{
+  font-size: 48px;
+  line-height: 69px;
+}
+.palteform-link{
+  display: flex;
+  align-items: center;
+}
+
+/* Huskiapp-plateform Section End */
+

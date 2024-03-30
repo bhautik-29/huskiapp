@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    height: 100vh;
+    overflow: hidden;
+}
+:root{
+    --button-hover:#172b4d;
+    --h1-bg:linear-gradient( #00fff2, #00ff2b);
+    --text-color:#172b4d;
+    --button-bg:#1d567c;
+    --button-text:#ffffff
+}
+.outer-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-flow: column;
+}
+.first-container{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; 
+ 
+ 
+}
+.startbtn{
+    background-color:var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    text-transform: capitalize;
+    font-size: 14PX;
+    text-align: center;
+    cursor: pointer;
+}
+.startbtn:hover ,.startbtn:active{
+    background: var(--button-hover);
+}
+.main{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    overflow: hidden;
+}
+
+.sliding-page{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    transition: .5s ease-out;
+    
+}
+.next1{
+    margin-top:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.start {
+    background-color:var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    text-transform: capitalize;
+    font-size: 14PX;
+    text-align: center;
+    cursor: pointer;
+}
+.start:hover ,.start:active{
+    background: var(--button-hover);
+}
+
+
+.main  .heading{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 700;
+    background: var(--h1-bg);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main p{
+    font-size: 14px;
+
+}
+
+.fbtn  {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+   position:static;
+}
+.fbtn button {
+    background-color:var(--button-hover);
+    color: var(--button-text);
+    border: none;
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    text-transform: capitalize;
+    font-size: 14PX;
+    text-align: center;
+    cursor: pointer;
+}
+.fbtn button:hover ,.fbtn button:active{
+    background: var(--button-bg);
+}
+

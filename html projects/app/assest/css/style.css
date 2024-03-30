@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --bg-color--:#464646;
+  --heading-text--:#172b4d;
+  --app-bgcolor--:rgba(255, 255, 255, 0.5);
+  --app-boxshadow--: 0px 1px 1px #091e4240, 0px 0px 1px #091e424f;
+  --task-bgcolor--:#ffffff;
+  --task-boxshadow--: 0px 1px 1px #091e4240, 0px 0px 1px #091e424f;
+}
+
+body {
+  font-family: sans-serif;
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: var(--bg-color--);
+
+
+}
+.content{
+  display: block;
+  flex-shrink: 0;
+}
+.main{
+  display: inline-block;
+ 
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 12px;
+  position: relative;
+}
+.container{
+  display: inline-block;
+  width: 25%;
+  margin: 0 15px;
+  height: 100%;
+ 
+}
+
+
+
+.app {
+  background-color:var(--app-bgcolor--);
+  border-radius: 10px;
+  box-shadow: var(--app-boxshadow--);
+    padding: 0 6px;
+    margin-top: 20px;
+    align-self: flex-start;
+  flex-grow: 2;
+    display: block;
+    height: 20rem;
+    white-space: nowrap;
+    box-sizing: border-box;
+    overflow-y: scroll;
+
+}
+.mb-3{
+  color: var(--heading-text--);
+  font-size: 20px;
+}
+h5 {
+  color: var(--heading-text--);
+}
+
+.app::-webkit-scrollbar {
+  width: 0 !important;
+
+}
+.modal-dialog{
+  position: relative;
+
+}
+
+#addNew {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--task-bgcolor--);
+  box-shadow: var(--task-boxshadow--);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  background-color: #ffffff;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#tasks {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  cursor: pointer;
+
+ 
+}
+
+
+#tasks .task {
+  /* border: 3px solid #000000; */
+  background-color: var(--task-bgcolor--);
+  box-shadow: var(--task-boxshadow--);
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 4px;
+ 
+}
+
+#tasks div .options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
+}
+
+#msg {
+  color: red;
+}
+.my-3{
+  color: var(--heading-text--);
+  font-size: 20px;
+}
+p{
+  color: var(--heading-text--);
+  font-size: 20px;
+}
+
+@media screen and (max-width:1500px) {
+.main{
+  flex-grow: 1;
+}
+.container{
+  flex-grow: 1;
+}
+.app{
+  flex-shrink: 1;
+}
+  
+}
