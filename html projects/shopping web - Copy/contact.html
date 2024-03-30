@@ -1,0 +1,196 @@
+<html lang="en">
+<head>
+	<meta charset="UTF_8">
+	<meta name="viewport" content="width-device-width initial-scale=1.0">
+	<title>choose your clothes</title>
+ 	<link rel="stylesheet" href="1style.css">
+	 <link rel="stylesheet" href="product.html">
+	<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>    
+	
+
+</head>
+<body>
+		<div class="header">
+		<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html"><img src="img\bklogo.png" width="200px" height="160px"></a>
+				</div>
+				<nav>
+					<ul id="MenuItems">
+						<li ><a href="index.html">Home</a></li>
+						<li><a href="product.html">Product</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Contect</a></li>
+						<li><a href="login.html">Account</a></li>
+					<ul>
+				</nav>
+				<a href="cart page.html"><img src="img/option/cart.png" width="30px" height="30px" ></a>
+				<img src="img/option/menu.png" class="menu-icon" onclick="menutoggle()" width="30px" height="30px" >
+        </div>
+        </div>
+        </div>
+    <!-- Map Section Begin -->
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24112.92132811736!2d-74.20651812810036!3d40.93514309648714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2fda38587e887%3A0xf03207815e338a0d!2sHaledon%2C%20NJ%2007508%2C%20USA!5e0!3m2!1sen!2sbd!4v1578120776078!5m2!1sen!2sbd"
+            height="612" width="1500"   style="border:0;" allowfullscreen=""></iframe>
+        <img src="img/icon/location.png" alt="">
+    </div>
+    <!-- Map Section End -->
+
+     <!-- Contact Section Begin -->
+     <section class="contact-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <h4>Contacts Us</h4>
+                        <div class="contact-address">
+                            <div class="ca-widget">
+                                <div class="cw-icon">
+                                    <img src="img/icon/icon-1.png" alt="">
+                                </div>
+                                <div class="cw-text">
+                                    <h5>Our Location</h5>
+                                    <p>60-49 Road 11378 New York.</p>
+                                </div>
+                            </div>
+                            <div class="ca-widget">
+                                <div class="cw-icon">
+                                    <img src="img/icon/icon-2.png" alt="">
+                                </div>
+                                <div class="cw-text">
+                                    <h5>Phone:</h5>
+                                    <p>+65 11.188.888</p>
+                                </div>
+                            </div>
+                            <div class="ca-widget">
+                                <div class="cw-icon">
+                                    <img src="img/icon/icon-3.png" alt="">
+                                </div>
+                                <div class="cw-text">
+                                    <h5>Mail</h5>
+                                    <p>hellocolorlib@ gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <h4>Leave A Comment</h4>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Your name">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Your email">
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea placeholder="Your messages"></textarea>
+                                    <button type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+
+
+
+<!-------------------------------------------------------------------- footer ------------------------------------------------------------------------------>
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h4>Downlod our File</h4>
+				<p>Download App for Andorid and Ios Mobile Phone.</p>
+				<div class="app-logo">
+					<img src="img\google logo\play-store.png" >
+					<img src="img\google logo\app-store.png" >
+
+				</div>
+			</div>
+			<div class="footer-col-2">
+				<img src="img\bklogo.png" >
+				<p>Our purpose Is To Substainably Make the Pleasure and Benefits of Sports Accesible to the Many.</p>
+			</div>
+			<div class="footer-col-3">
+				<h4>Useful links</h4>
+				<ul>
+					<li>Coupens</li>
+					<li>BLog-Post</li>
+					<li>Return Policy</li>
+					<li>Join Affiliate</li>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h4>Follow us</h4>
+				<ul>
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>Instagram</li>
+					<li>youtube</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">copyright 2020-B M Kareliya's work</p>
+	</div>
+</div>
+	<!------------------- js for toggle menu -------------------------------------------------->
+	<script>
+	var ManuItems = document.getElementById("MenuItems");
+
+	ManuItems.style.maxHeight="0px";
+	function menutoggle(){
+		if(	ManuItems.style.maxHeight=="0px")
+		{
+			ManuItems.style.maxHeight="200px";
+
+		}
+		else
+		{
+			ManuItems.style.maxHeight="0px";
+
+		}
+	}
+	</script>
+    <!------------------- js for toggle form -------------------------------------------------->
+<script>
+    var loginform = document.getElementById("loginform");
+    var regform = document.getElementById("RegForm");
+    var Indicator = document.getElementById("IndiCator");
+
+        function register(){
+            regform.style.transform ="translatex(0px)";
+            loginform.style.transform ="translatex(0px)";
+            Indicator.style.transform ="translatex(100px)";
+        }
+
+        function login(){
+            regform.style.transform ="translatex(300px)";
+            loginform.style.transform ="translatex(300px)";
+            Indicator.style.transform ="translatex(0px)"; 
+        }
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>	
