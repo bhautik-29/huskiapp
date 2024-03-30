@@ -80,8 +80,8 @@
     font-size: 13.34px;
   }
   .transperent-link-btn{
-    height: 35px;
-    width: 150px;
+    height: 33px;
+    width: 148px;
   }
   .link-btn{
     height: 35px;
@@ -106,4 +106,20 @@
   .w-xsm-50{
     width: 50%;
   }
+  .ml-xsm-1{
+    margin-left: 1rem !important;
+  }
+  .ml-xsm-2{
+    margin-left: 1.5rem !important;
+  }
+  .ml-xsm-3{
+    margin-left: 2rem !important;
+  }
+  .ml-xsm-4{
+    margin-left: 2.5rem !important;
+  }
+  .ml-xsm-5{
+    margin-left: 3rem !important;
+  }
+
 }
