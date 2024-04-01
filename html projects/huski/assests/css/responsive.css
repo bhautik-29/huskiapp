@@ -4,6 +4,56 @@
    margin-right: 7rem !important;
   }
  }
+@media (max-width:1200px) {
+  .repeat-purchase-heading .heading,.repeat-purchase-description .description,.puchase-theme-heading,.blog-container-heading{
+    text-align: center;
+  }
+  .theme-photo-container{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .homepage-blog-container,.theme-photo-container{
+    height: auto !important;
+  }
+  .homepage-blog-card{
+    margin-top: 36px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+
+ }
+ @media (max-width:993px) {
+  .shopify-app-footer-link{
+    align-items: center;
+    text-align: center;
+  }
+  .shopify-app-update{
+    text-align: center;
+  }
+  .inquery-heading{
+    min-width: 100%;
+    text-align: center;
+  }
+  .inquery-email{
+    min-width: 80%;
+  }
+  .email-container{
+    width: 100%;
+  }
+  .email-container,.palteform-link{
+    display: flex;
+    justify-content: center;
+  }
+  .plateform-image, .plateform-content-wrepper {
+    height: auto !important;
+    margin: 2rem 0 0 0;
+    text-align: center;
+  }
+
+ }
 
 @media (max-width:1180px) {
 
@@ -65,6 +115,7 @@
   header .outer-nav{
       display: none;
   }
+ 
 
 }
 @media (max-width:767px) {
@@ -72,6 +123,16 @@
       flex-wrap: wrap;
       flex-flow: column;
     }
+    .repeat-purchase-wrepper,.theme-photo-container{
+      height: auto !important;
+      width: auto !important;
+
+    }
+    .inquery-heading .heading{
+      margin: 0 !important;
+      text-align: center;
+    }
+  
 
   }
 
@@ -104,7 +165,13 @@
     text-align: center;
   }
   .w-xsm-50{
-    width: 50%;
+    width: 50% !important;
+  }
+  .osr-container-fluid{
+    width: 90% !important ;
+  }
+  .w-xsm-90{
+    width: 90% !important;
   }
   .ml-xsm-1{
     margin-left: 1rem !important;
@@ -121,5 +188,26 @@
   .ml-xsm-5{
     margin-left: 3rem !important;
   }
-
+  .theme-photo{
+    margin-top: 1rem;
+  }
+  .inquery-email{
+    width: 60%;
+    height: auto !important;
+  }
+  .inquery-email,.inquery-email input[type=email] {
+    font-size: 12px !important;
+    height: 50px !important;
+    padding: 0px 5px !important;
+  }
+  .inquery-email input[type=submit]{
+    width: 120px !important;
+    height: 42px !important;
+    margin: 0 !important;
+    font-size: 10px !important;
+  }
+  .inquery-heading .heading{
+    font-size: 28px !important;
+    line-height: 1.6 !important;
+  }
 }
